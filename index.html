@@ -42,7 +42,7 @@
       align-items: center;
     }
 
-    /* Header Logos din START */
+    /* HEADER DIN START */
     .logos {
       display: flex;
       align-items: center;
@@ -99,26 +99,24 @@
       margin-bottom: 22px;
     }
 
-    /* CTA Button */
+    /* BUTONUL VERDE ORIGINAL */
     .cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+      display: block;
+      width: 100%;
       background: var(--green);
       color: #ffffff;
       border: none;
       border-radius: 16px;
-      padding: 17px 38px;
+      padding: 17px 24px;
       cursor: pointer;
       text-decoration: none;
       margin-bottom: 16px;
-      transition: background 0.15s, transform 0.1s;
+      text-align: left;
+      transition: background 0.15s;
     }
-    .cta-btn:hover  { background: var(--green-dark); transform: translateY(-1px); }
-    .cta-apple { width: 26px; height: 26px; flex-shrink: 0; fill: #ffffff; }
-    .cta-text { display: flex; flex-direction: column; align-items: flex-start; }
-    .cta-text strong { font-size: 16px; font-weight: 700; color: #ffffff; line-height: 1.25; }
-    .cta-text span { font-size: 12px; color: rgba(255,255,255,0.72); }
+    .cta-btn:hover { background: var(--green-dark); }
+    .cta-text strong { font-size: 16px; font-weight: 700; display: block; margin-bottom: 2px; }
+    .cta-text span { font-size: 12px; color: rgba(255,255,255,0.85); }
 
     .section-label {
       font-size: 10.5px;
@@ -129,7 +127,7 @@
       margin: 20px 0 14px;
     }
 
-    /* Offer Card */
+    /* CARDS */
     .offer-card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -140,16 +138,14 @@
       gap: 13px;
       width: 100%;
       margin-bottom: 20px;
-      position: relative;
     }
     .offer-play-circle img { width: 46px; height: 46px; }
-    .offer-info { flex: 1; min-width: 0; }
-    .offer-title { font-weight: 700; font-size: 14px; color: #fff; display: block; margin-bottom: 2px; }
-    .offer-rate { background: var(--yellow); color: #000; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+    .offer-info { flex: 1; }
+    .offer-title { font-weight: 700; font-size: 14px; color: #fff; }
+    .offer-rate { background: var(--yellow); color: #000; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; margin-left: 5px; }
     .offer-sub { font-size: 12px; color: var(--muted); }
     .offer-price-val { font-size: 24px; font-weight: 700; color: var(--green); }
 
-    /* Steps */
     .steps { display: flex; flex-direction: column; gap: 14px; width: 100%; margin-bottom: 40px; }
     .step-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; display: flex; gap: 14px; }
     .step-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(44, 199, 110, 0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -161,7 +157,7 @@
     footer { text-align: center; margin-top: auto; }
     .footer-links { display: flex; gap: 15px; justify-content: center; margin-bottom: 10px; }
     .footer-links a { font-size: 12px; color: var(--muted); text-decoration: none; }
-    .footer-copy { font-size: 11px; color: var(--muted); opacity: 0.6; }
+    .footer-copy { font-size: 11px; color: var(--muted); }
   </style>
 </head>
 <body>
@@ -178,9 +174,7 @@
   </div>
 
   <div class="badge">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px; height:13px; margin-right:5px;">
-      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
-    </svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px; height:13px; margin-right:5px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
     Geverifieerd Aanbod
   </div>
 
@@ -217,10 +211,9 @@
       </div>
       <div class="step-body">
         <div class="step-title">Registreer je gratis</div>
-        <div class="step-desc">Maak een account aan en ontvang een <span class="hi">$10 bonus.</span></div>
+        <div class="step-desc">Meld je aan en start één aanbieding <span class="hi">$10 bonus.</span></div>
       </div>
     </div>
-
     <div class="step-card">
       <div class="step-icon">
         <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5"/><line x1="7" y1="12" x2="11" y2="12"/><line x1="9" y1="10" x2="9" y2="14"/></svg>
@@ -230,7 +223,6 @@
         <div class="step-desc">Scroll door video's of test games om <span class="hi">echt geld</span> te verdienen.</div>
       </div>
     </div>
-
     <div class="step-card">
       <div class="step-icon">
         <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg>
@@ -259,9 +251,7 @@
       if(!e.getAttribute("href")?.includes("#")) {
         let url = e.getAttribute("href");
         let qs = window.location.search;
-        if(qs) {
-          e.setAttribute("href", url + (url.includes("?") ? "&" : "?") + qs.replace("?", ""));
-        }
+        if(qs) { e.setAttribute("href", url + (url.includes("?") ? "&" : "?") + qs.replace("?", "")); }
       }
     }))
   }));
