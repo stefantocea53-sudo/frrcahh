@@ -7,17 +7,13 @@
   <link rel="icon" href="data:,">
   <meta name="description" content="Meld je aan. Start één aanbieding. Geld verdienen." />
   
-  <link rel="preload" as="image" href="assets/freecash-logo.webp" />
-  <link rel="preload" as="image" href="assets/tiktok-logo.webp" />
-  <link rel="preload" as="image" href="assets/play-button.webp" />
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --bg:         #0d1117;
       --card:       #161c24;
       --border:     #212830;
-      --green:      #2cc76e;
+      --green:      #2cc76e; /* VERDELE ĂLA BUN */
       --green-dark: #25b060;
       --text:       #e8edf3;
       --muted:      #7a8896;
@@ -42,7 +38,7 @@
       align-items: center;
     }
 
-    /* HEADER DIN START */
+    /* HEADER LOGOS DIN START */
     .logos {
       display: flex;
       align-items: center;
@@ -99,24 +95,34 @@
       margin-bottom: 22px;
     }
 
-    /* BUTONUL VERDE ORIGINAL */
+    /* BUTONUL VERDE - FIX CA ÎN POZĂ */
     .cta-btn {
       display: block;
       width: 100%;
-      background: var(--green);
-      color: #ffffff;
+      background: var(--green) !important; /* Forțăm culoarea verde */
+      color: #ffffff !important;
       border: none;
       border-radius: 16px;
-      padding: 17px 24px;
+      padding: 20px 24px;
       cursor: pointer;
       text-decoration: none;
       margin-bottom: 16px;
-      text-align: left;
-      transition: background 0.15s;
+      text-align: left; /* Aliniat la stânga ca în poză */
+      transition: opacity 0.2s;
     }
-    .cta-btn:hover { background: var(--green-dark); }
-    .cta-text strong { font-size: 16px; font-weight: 700; display: block; margin-bottom: 2px; }
-    .cta-text span { font-size: 12px; color: rgba(255,255,255,0.85); }
+    .cta-btn:hover { opacity: 0.9; }
+    .cta-text strong { 
+      font-size: 17px; 
+      font-weight: 800; 
+      display: block; 
+      margin-bottom: 2px;
+      color: #ffffff;
+    }
+    .cta-text span { 
+      font-size: 13px; 
+      color: rgba(255,255,255,0.9); 
+      display: block;
+    }
 
     .section-label {
       font-size: 10.5px;
@@ -127,7 +133,7 @@
       margin: 20px 0 14px;
     }
 
-    /* CARDS */
+    /* CARDURILE DE OFERTĂ */
     .offer-card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -186,7 +192,7 @@
 
   <a href="https://taptrcks.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidSI6IjY5YzE4YmI5MDBkZGM2MzVmOTdmNzRmYyIsInRzIjoxNzc2MzMwNDM0Njk1fQ">
     <div class="cta-text">
-      <strong>Meld je aan & start nu</strong>
+      <strong>Meld je aan en start één aanbieding</strong>
       <span>iOS & Android</span>
     </div>
   </a>
@@ -211,7 +217,7 @@
       </div>
       <div class="step-body">
         <div class="step-title">Registreer je gratis</div>
-        <div class="step-desc">Meld je aan en start één aanbieding <span class="hi">$10 bonus.</span></div>
+        <div class="step-desc">Maak een account aan en ontvang een <span class="hi">$10 bonus.</span></div>
       </div>
     </div>
     <div class="step-card">
