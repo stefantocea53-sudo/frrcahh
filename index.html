@@ -13,7 +13,7 @@
       --bg:         #0d1117;
       --card:       #161c24;
       --border:     #212830;
-      --green:      #2cc76e; /* VERDELE ĂLA BUN */
+      --green:      #2cc76e; 
       --green-dark: #25b060;
       --text:       #e8edf3;
       --muted:      #7a8896;
@@ -95,33 +95,36 @@
       margin-bottom: 22px;
     }
 
-    /* BUTONUL VERDE - FIX CA ÎN POZĂ */
+    /* BUTONUL VERDE MARE (FIX CA IN POZA) */
     .cta-btn {
       display: block;
       width: 100%;
-      background: var(--green) !important; /* Forțăm culoarea verde */
-      color: #ffffff !important;
-      border: none;
-      border-radius: 16px;
-      padding: 20px 24px;
-      cursor: pointer;
-      text-decoration: none;
-      margin-bottom: 16px;
-      text-align: left; /* Aliniat la stânga ca în poză */
-      transition: opacity 0.2s;
-    }
-    .cta-btn:hover { opacity: 0.9; }
-    .cta-text strong { 
-      font-size: 17px; 
-      font-weight: 800; 
-      display: block; 
-      margin-bottom: 2px;
+      background-color: var(--green);
       color: #ffffff;
+      text-decoration: none;
+      padding: 18px 24px;
+      border-radius: 20px; /* Colturile rotunjite din poza */
+      margin-bottom: 25px;
+      transition: background 0.2s ease;
     }
-    .cta-text span { 
-      font-size: 13px; 
-      color: rgba(255,255,255,0.9); 
-      display: block;
+    .cta-btn:hover {
+      background-color: var(--green-dark);
+    }
+    .cta-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .cta-text strong {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .cta-text span {
+      font-size: 13px;
+      opacity: 0.9;
+      margin-top: 2px;
     }
 
     .section-label {
@@ -133,7 +136,7 @@
       margin: 20px 0 14px;
     }
 
-    /* CARDURILE DE OFERTĂ */
+    /* CARDURILE DE OFERTA */
     .offer-card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -152,6 +155,7 @@
     .offer-sub { font-size: 12px; color: var(--muted); }
     .offer-price-val { font-size: 24px; font-weight: 700; color: var(--green); }
 
+    /* STEPS */
     .steps { display: flex; flex-direction: column; gap: 14px; width: 100%; margin-bottom: 40px; }
     .step-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; display: flex; gap: 14px; }
     .step-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(44, 199, 110, 0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -190,7 +194,7 @@
   </h1>
   <p class="subtext">Meld je aan. Start één aanbieding. Geld verdienen.</p>
 
-  <a href="https://taptrcks.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidSI6IjY5YzE4YmI5MDBkZGM2MzVmOTdmNzRmYyIsInRzIjoxNzc2MzMwNDM0Njk1fQ">
+  <a href="https://gypsyniggaaffiliatelink.com" class="cta-btn">
     <div class="cta-text">
       <strong>Meld je aan en start één aanbieding</strong>
       <span>iOS & Android</span>
